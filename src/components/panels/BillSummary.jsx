@@ -53,8 +53,8 @@ class BillSummary extends React.Component {
           <CardHeader>
             <Row>
               <Col>
-                <div className="text-left numbers">
-                  <CardTitle tag="p">Bill Summary</CardTitle>
+                <div className="text-left">
+                  <CardTitle tag="h4">Bill Summary</CardTitle>
                   <p />
                 </div>
               </Col>

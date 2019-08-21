@@ -52,6 +52,7 @@ import {
 //Standalone panel components
 import AccountStatus from "../components/panels/AccountStatus.jsx"
 import BillSummary from "../components/panels/BillSummary.jsx"
+import EstimatedUsageBreakdown from "../components/panels/EstimatedUsageBreakdown.jsx"
 
 var mapData = {
   AU: 760,
@@ -76,62 +77,11 @@ class Dashboard extends React.Component {
             <Col xl="6" lg="6" md="6" sm="6">
               <AccountStatus />
             </Col>
-            <Col xl="6" lg="3" md="6" sm="6">
+            <Col xl="6" lg="6" md="6" sm="6">
               <BillSummary />
             </Col>
-            <Col lg="3" md="6" sm="6">
-              <Card className="card-stats">
-                <CardBody>
-                  <Row>
-                    <Col md="4" xs="5">
-                      <div className="icon-big text-center icon-warning">
-                        <i className="nc-icon nc-vector text-danger" />
-                      </div>
-                    </Col>
-                    <Col md="8" xs="7">
-                      <div className="numbers">
-                        <p className="card-category">Errors</p>
-                        <CardTitle tag="p">23</CardTitle>
-                        <p />
-                      </div>
-                    </Col>
-                  </Row>
-                </CardBody>
-                <CardFooter>
-                  <hr />
-                  <div className="stats">
-                    <i className="fa fa-clock-o" />
-                    In the last hour
-                  </div>
-                </CardFooter>
-              </Card>
-            </Col>
-            <Col lg="3" md="6" sm="6">
-              <Card className="card-stats">
-                <CardBody>
-                  <Row>
-                    <Col md="4" xs="5">
-                      <div className="icon-big text-center icon-warning">
-                        <i className="nc-icon nc-favourite-28 text-primary" />
-                      </div>
-                    </Col>
-                    <Col md="8" xs="7">
-                      <div className="numbers">
-                        <p className="card-category">Followers</p>
-                        <CardTitle tag="p">+45K</CardTitle>
-                        <p />
-                      </div>
-                    </Col>
-                  </Row>
-                </CardBody>
-                <CardFooter>
-                  <hr />
-                  <div className="stats">
-                    <i className="fa fa-refresh" />
-                    Update now
-                  </div>
-                </CardFooter>
-              </Card>
+            <Col xl="6" lg="6" md="6" sm="6">
+              <EstimatedUsageBreakdown />
             </Col>
           </Row>
           <Row>

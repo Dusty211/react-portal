@@ -65,8 +65,8 @@ class AccountStatus extends React.Component {
           <CardHeader>
             <Row>
               <Col>
-                <div className="text-left numbers">
-                  <CardTitle tag="p">Account Status</CardTitle>
+                <div className="text-left">
+                  <CardTitle tag="h4">Account Status</CardTitle>
                   <p />
                 </div>
               </Col>
