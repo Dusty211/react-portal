@@ -1,22 +1,33 @@
 const estimatedUsageBreakdown = {
   data: canvas => {
     return {
-      labels: [1, 2, 3],
+      labels: [
+        'Lighting',
+        'Food Refrigeration',
+        'Electrical Appliances',
+        'Space Heating',
+        'Domestic Hot Water',
+        'Cooking',
+      ],
       datasets: [
         {
-          label: "Emails",
+          label: "Usage",
           pointRadius: 0,
           pointHoverRadius: 0,
-          backgroundColor: ["#e3e3e3", "#4acccd", "#fcc468", "#ef8157"],
+          backgroundColor: ["yellow", "red", "blue", "green", "gray", "purple"],
           borderWidth: 0,
-          data: [342, 480, 530, 120]
+          data: [255, 186, 302, 0, 93, 144]
         }
       ]
     };
   },
   options: {
     legend: {
-      display: false
+      display: true,
+      position: 'left',
+      labels: {
+        fontFamily: 'Montserrat'
+      }
     },
 
     pieceLabel: {
@@ -26,7 +37,7 @@ const estimatedUsageBreakdown = {
     },
 
     tooltips: {
-      enabled: false
+      enabled: true
     },
 
     scales: {
