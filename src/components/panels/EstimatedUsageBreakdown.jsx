@@ -15,8 +15,8 @@ class EstimatedUsageBreakdown extends React.Component {
   render() {
 
     return(
-      <div className="content">
-        <Card>
+      <div className="content h-100" style={{paddingBottom: 25}}>
+        <Card className="h-100" >
           <CardHeader>
             <CardTitle tag="h4">Estimated Usage Breakdown (kwh)</CardTitle>
           </CardHeader>

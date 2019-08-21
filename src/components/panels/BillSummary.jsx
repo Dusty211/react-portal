@@ -48,8 +48,8 @@ class BillSummary extends React.Component {
   render() {
 
     return(
-      <div className="content">
-        <Card className="card-stats">
+      <div className="content h-100" style={{paddingBottom: 25}}>
+        <Card className=" h-100" > 
           <CardHeader>
             <Row>
               <Col>
@@ -61,9 +61,9 @@ class BillSummary extends React.Component {
             </Row>
           </CardHeader>
           <CardBody>
-            {this.cardRows.map( row => {
+            {this.cardRows.map( (row, index) => {
               return(
-                <Row style={row.bold ? {paddingBottom: 15, fontWeight: 'bold'} : {paddingBottom: 15} }>
+                <Row key={`${row.title}+${index}`} style={row.bold ? {paddingBottom: 15, fontWeight: 'bold'} : {paddingBottom: 15} }>
                   <Col md="6" xs="6">
                     <div className="text-left">
                       {row.title}
