@@ -49,6 +49,7 @@ import {
   chartExample8
 } from "variables/charts.jsx";
 
+//Standalone panel components
 import AccountStatus from "../components/panels/AccountStatus.jsx"
 import BillSummary from "../components/panels/BillSummary.jsx"
 

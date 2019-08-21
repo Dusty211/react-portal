@@ -1,6 +1,7 @@
 
 import React from "react";
 import {
+  Button,
   Card,
   CardHeader,
   CardBody,
@@ -14,23 +15,33 @@ class BillSummary extends React.Component {
   cardRows = [
     {
       title: "Billing Period End Date",
-      data: "12/22/2018"
+      data: "12/22/2018",
+      bold: false,
+      red: false
     },
     {
       title: "Previous Balance",
-      data: "($38.86)"
+      data: "($38.86)",
+      bold: false,
+      red: false
     },
     {
       title: "Current Period",
-      data: "$118.33"
+      data: "$118.33",
+      bold: false,
+      red: false
     },
     {
       title: "Due By",
-      data: "11/29/2018"
+      data: "11/29/2018",
+      bold: true,
+      red: false
     },
     {
       title: "Total Account Balance",
-      data: "$155.43"
+      data: "$155.43",
+      bold: true,
+      red: false
     },
   ]
 
@@ -50,15 +61,15 @@ class BillSummary extends React.Component {
             </Row>
           </CardHeader>
           <CardBody>
-            {this.cardRows.map( (row, index) => {
+            {this.cardRows.map( row => {
               return(
-                <Row style={index === 0 ? {paddingTop: 0} : {paddingTop: 7}}>
+                <Row style={row.bold ? {paddingBottom: 15, fontWeight: 'bold'} : {paddingBottom: 15} }>
                   <Col md="6" xs="6">
                     <div className="text-left">
                       {row.title}
                     </div>
                   </Col>
-                  <Col md="6" xs="6">
+                  <Col md="6" xs="6" style={row.red ? {color: 'red'} : null }>
                     <div className="text-left">
                       {row.data}
                     </div>
@@ -72,13 +83,17 @@ class BillSummary extends React.Component {
             <hr />
             <Row>
               <Col md="6" xs="6">
-                <div className="text-left">
-                button1
+                <div className="pull-left">
+                  <Button className="btn-round" color="primary">
+                    Pay Now
+                  </Button>
                 </div>
               </Col>
               <Col md="6" xs="6">
-                <div className="text-right">
-                  button2
+                <div className="pull-right">
+                  <Button className="btn-round" color="light-gray">
+                    Quick Help
+                  </Button>
                 </div>
               </Col>
             </Row>
