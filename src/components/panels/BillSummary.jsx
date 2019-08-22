@@ -1,4 +1,5 @@
 
+import uuidv4 from "uuid/v4";
 import React from "react";
 import {
   Button,
@@ -49,7 +50,7 @@ class BillSummary extends React.Component {
 
     return(
       <div className="content h-100" style={{paddingBottom: 25}}>
-        <Card className=" h-100" > 
+        <Card className=" h-100" >
           <CardHeader>
             <Row>
               <Col>
@@ -61,9 +62,9 @@ class BillSummary extends React.Component {
             </Row>
           </CardHeader>
           <CardBody>
-            {this.cardRows.map( (row, index) => {
+            {this.cardRows.map( row => {
               return(
-                <Row key={`${row.title}+${index}`} style={row.bold ? {paddingBottom: 15, fontWeight: 'bold'} : {paddingBottom: 15} }>
+                <Row key={`${uuidv4()}`} style={row.bold ? {paddingBottom: 15, fontWeight: 'bold'} : {paddingBottom: 15} }>
                   <Col md="6" xs="6">
                     <div className="text-left">
                       {row.title}
