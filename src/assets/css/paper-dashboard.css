@@ -12713,6 +12713,9 @@ License - nucleoapp.com/license/
   .off-canvas-sidebar[data-color="white"] .user:after {
     background-color: #66615B;
     opacity: .4; }
+  .sidebar[data-color="primary"]:after,
+  .off-canvas-sidebar[data-color="primary"]:after {
+    background: #0746a5; }
   .sidebar[data-color="brown"]:after,
   .off-canvas-sidebar[data-color="brown"]:after {
     background: #66615B; }
