@@ -16,13 +16,12 @@
 */
 import React from "react";
 // react plugin used to create charts
-import { Line, Bar, Doughnut } from "react-chartjs-2";
+import { Bar, Doughnut } from "react-chartjs-2";
 // react plugin for creating vector maps
 import { VectorMap } from "react-jvectormap";
 
 // reactstrap components
 import {
-  Badge,
   Button,
   Card,
   CardHeader,
@@ -39,9 +38,6 @@ import {
 } from "reactstrap";
 
 import {
-  chartExample1,
-  chartExample2,
-  chartExample3,
   chartExample4,
   chartExample5,
   chartExample6,
