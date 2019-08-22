@@ -13,10 +13,11 @@ import { monthlyEnergyUsage } from "variables/monthlyEnergyUsageChart.js";
 class MonthlyEnergyUsage extends React.Component {
   render() {
     return(
-      <Card className="card-chart">
-      <CardHeader>
-        <CardTitle tag="h4" className="text-center">Monthly Energy Usage</CardTitle>
-      </CardHeader>
+      <div className="h-100" style={{paddingBottom: 25}} >
+      <Card className="card-chart h-100">
+        <CardHeader>
+          <CardTitle tag="h4" className="text-center">Monthly Energy Usage</CardTitle>
+        </CardHeader>
         <CardBody>
           <Bar
             data={monthlyEnergyUsage.data}
@@ -24,6 +25,7 @@ class MonthlyEnergyUsage extends React.Component {
           />
         </CardBody>
       </Card>
+      </div>
     )
   }
 }

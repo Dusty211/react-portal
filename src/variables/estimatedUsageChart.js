@@ -14,7 +14,7 @@ const estimatedUsageBreakdown = {
           label: "Usage",
           pointRadius: 0,
           pointHoverRadius: 0,
-          backgroundColor: ["yellow", "red", "blue", "green", "gray", "purple"],
+          backgroundColor: ["#E3E449", "#EE4F4D", "#3F66B0", "#55B956", "#949494", "#7C7CBB"],
           borderWidth: 0,
           data: [255, 186, 302, 0, 93, 144]
         }
