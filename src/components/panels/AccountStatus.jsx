@@ -93,7 +93,6 @@ class AccountStatus extends React.Component {
             )}
           </CardBody>
           <CardFooter>
-            <hr />
             <Row>
               <Col md="6" xs="6">
                 <div className="pull-left">
