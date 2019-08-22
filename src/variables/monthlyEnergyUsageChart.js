@@ -114,7 +114,8 @@ const monthlyEnergyUsage = {
       tooltipXOffset: 10
     },
     legend: {
-      display: true
+      display: true,
+      position: 'bottom'
     },
     scales: {
       yAxes: [
