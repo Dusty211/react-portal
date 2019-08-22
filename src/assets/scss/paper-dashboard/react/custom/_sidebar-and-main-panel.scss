@@ -262,7 +262,7 @@
             position: absolute;
             bottom: 0;
             right: 15px;
-            height: 1px;
+            height: 0px; //was 1px originally
             width: calc(100% - 30px);
             background-color: $opacity-5;
 
