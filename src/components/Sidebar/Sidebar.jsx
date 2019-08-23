@@ -21,7 +21,10 @@ import { Nav, Collapse } from "reactstrap";
 import PerfectScrollbar from "perfect-scrollbar";
 
 // import avatar from "assets/img/faces/ayo-ogunseinde-2.jpg";
-import logo from "assets/img/react-logo.png";
+// TEMPLATE  import logo from "assets/img/react-logo.png";
+
+//SaveSolar Logo
+import savesolarLogo from '../../assets/img/savesolar/savesolar_logo_white.png'
 
 var ps;
 
@@ -153,7 +156,10 @@ class Sidebar extends React.Component {
         data-active-color={this.props.activeColor}
       >
         <div className="logo">
-          <a
+          <div style={{display: 'flex', alignItems: 'center', paddingTop: 20, maxWidth: 90, margin: 'auto'}}>
+            <img src={savesolarLogo} alt="SaveSolar Logo" />
+          </div>
+{/*  //template logos        <a
             href="https://www.creative-tim.com"
             className="simple-text logo-mini"
           >
@@ -166,7 +172,7 @@ class Sidebar extends React.Component {
             className="simple-text logo-normal"
           >
             Creative Tim
-          </a>
+          </a>*/}
         </div>
 
         <div className="sidebar-wrapper" ref="sidebar">
