@@ -26,18 +26,6 @@ class EstimatedUsageBreakdown extends React.Component {
               options={estimatedUsageBreakdown.options}
             />
           </CardBody>
-          {/*
-            <CardFooter>
-              <div className="legend">
-                <i className="fa fa-circle" style={{color: 'yellow'}}/> Lighting{" "}
-                <i className="fa fa-circle" style={{color: 'red'}}/> Food Refrigeration{" "}
-                <i className="fa fa-circle" style={{color: 'blue'}}/> Electrical Appliances{" "}
-                <i className="fa fa-circle" style={{color: 'green'}}/> Space Heating{" "}
-                <i className="fa fa-circle" style={{color: 'gray'}}/> Domestic Hot Water{" "}
-                <i className="fa fa-circle" style={{color: 'purple'}}/> Cooking
-              </div>
-            </CardFooter>
-            */}
         </Card>
       </div>
     )
