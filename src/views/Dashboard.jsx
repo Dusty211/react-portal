@@ -36,13 +36,13 @@ class Dashboard extends React.Component {
       <>
         <div className="content">
           <Row>
-            <Col xl="6" lg="6" md="6" sm="6" className="align-self-stretch">
+            <Col xl="4" lg="6" md="6" sm="6" className="align-self-stretch">
               <AccountStatus />
             </Col>
-            <Col xl="6" lg="6" md="6" sm="6" className="align-self-stretch">
+            <Col xl="4" lg="6" md="6" sm="6" className="align-self-stretch">
               <BillSummary />
             </Col>
-            <Col xl="6" lg="6" md="6" sm="6" className="align-self-stretch">
+            <Col xl="4" lg="6" md="6" sm="6" className="align-self-stretch">
               <EstimatedUsageBreakdown/>
             </Col>
           </Row>

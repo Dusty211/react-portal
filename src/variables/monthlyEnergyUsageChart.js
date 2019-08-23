@@ -96,6 +96,7 @@ const monthlyEnergyUsage = {
 ]
 },
   options: {
+    responsive: true,
     tooltips: {
       tooltipFillColor: "rgba(0,0,0,0.5)",
       tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
@@ -143,7 +144,7 @@ const monthlyEnergyUsage = {
       xAxes: [
         {
           stacked: true,
-          barPercentage: 0.8,
+          barPercentage: 1,
           gridLines: {
             zeroLineColor: "white",
             display: false,
