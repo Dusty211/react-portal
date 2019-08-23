@@ -15,7 +15,7 @@ class CommunitySolarSavings extends React.Component {
       <div className="content h-100" style={{paddingBottom: 25}}>
         <Card className="h-100" >
           <CardHeader>
-            <CardTitle tag="h4">Community Solar Savings</CardTitle>
+            <CardTitle tag="h4">Community Solar Savings - December</CardTitle>
           </CardHeader>
           <CardBody>
           <Alert color="primary" style={{padding: 8, display: 'flex', alignItems: 'center'}} >

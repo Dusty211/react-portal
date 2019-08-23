@@ -97,6 +97,7 @@ const monthlyEnergyUsage = {
 },
   options: {
     responsive: true,
+    maintainAspectRatio: false,
     tooltips: {
       tooltipFillColor: "rgba(0,0,0,0.5)",
       tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",

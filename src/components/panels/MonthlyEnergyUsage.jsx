@@ -18,7 +18,7 @@ class MonthlyEnergyUsage extends React.Component {
         <CardHeader>
           <CardTitle tag="h4" className="text-center">Monthly Energy Usage</CardTitle>
         </CardHeader>
-        <CardBody>
+        <CardBody style={{maxHeight: 350}}>
           <Bar
             data={monthlyEnergyUsage.data}
             options={monthlyEnergyUsage.options}
