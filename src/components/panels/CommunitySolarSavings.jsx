@@ -22,24 +22,24 @@ class CommunitySolarSavings extends React.Component {
             <CardTitle tag="h4">Community Solar Savings - December</CardTitle>
           </CardHeader>
           <CardBody>
-          <Alert color="primary" style={{padding: 8, display: 'flex', alignItems: 'center'}} >
-            <div className="d-inline-block bg-white" style={{width: '20%', padding: 15}} >
+          <Alert color="primary" style={{maxHeight: 90, padding: 8, display: 'flex', alignItems: 'center'}} >
+            <div className="d-inline-block bg-white" style={{minWidth: 60, padding: 15}} >
               <SunIcon color="#0746a5" title='Sun icon'/>
             </div>
             <div className="d-inline-block" style={{width: '80%', paddingLeft: 10}} >
               <span>Your Community Solar facility generated 22,500 kWh for the last billing cycle</span>
             </div>
           </Alert>
-          <Alert color="primary" style={{padding: 8, display: 'flex', alignItems: 'center'}} >
-            <div className="d-inline-block bg-white" style={{width: '20%', padding: 15}} >
+          <Alert color="primary" style={{maxHeight: 90, padding: 8, display: 'flex', alignItems: 'center'}} >
+            <div className="d-inline-block bg-white" style={{minWidth: 60, padding: 15}} >
               <LinkIcon color="#0746a5" title='Link icon'/>
             </div>
             <div className="d-inline-block" style={{width: '80%', paddingLeft: 10}} >
               <span>Your 5% allocation equates to 750 kWh’s over the period</span>
             </div>
           </Alert>
-          <Alert color="primary" style={{padding: 8, display: 'flex', alignItems: 'center'}} >
-            <div className="d-inline-block bg-white" style={{width: '20%', padding: 15}} >
+          <Alert color="primary" style={{maxHeight: 90, padding: 8, display: 'flex', alignItems: 'center'}} >
+            <div className="d-inline-block bg-white" style={{minWidth: 60, padding: 15}} >
               <DollarIcon color="#0746a5" title='Dollar icon'/>
             </div>
             <div className="d-inline-block" style={{maxWidth: '80%', paddingLeft: 10}} >

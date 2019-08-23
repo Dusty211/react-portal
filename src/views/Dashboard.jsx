@@ -47,10 +47,10 @@ class Dashboard extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col xl="8" lg="8" md="8" sm="8" className="align-self-stretch">
+            <Col xl="8" lg="12" md="12" sm="12" className="align-self-stretch">
               <MonthlyEnergyUsage />
             </Col>
-            <Col xl="4" lg="4" md="4" sm="4" className="align-self-stretch">
+            <Col xl="4" lg="8" md="12" sm="12" className="align-self-stretch">
               <CommunitySolarSavings />
             </Col>
           </Row>
