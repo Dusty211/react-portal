@@ -18,7 +18,7 @@ class EstimatedUsageBreakdown extends React.Component {
       <div className="content h-100" style={{paddingBottom: 25}}>
         <Card className="h-100" >
           <CardHeader>
-            <CardTitle tag="h4">Estimated Usage Breakdown (kWh)</CardTitle>
+            <CardTitle tag="h4" className="text-center">Estimated Usage Breakdown (kWh)</CardTitle>
           </CardHeader>
           <CardBody>
             <Pie
