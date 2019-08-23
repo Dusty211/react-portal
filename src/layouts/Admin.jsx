@@ -98,6 +98,7 @@ class Admin extends React.Component {
           routes={routes}
           bgColor={this.state.backgroundColor}
           activeColor={this.state.activeColor}
+          sidebarIsMini={this.state.sidebarMini}
         />
         <div className="main-panel" ref="mainPanel">
           <AdminNavbar {...this.props} handleMiniClick={this.handleMiniClick} />

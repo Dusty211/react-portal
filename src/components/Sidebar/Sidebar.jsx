@@ -21,7 +21,7 @@ import { Nav, Collapse } from "reactstrap";
 import PerfectScrollbar from "perfect-scrollbar";
 
 // import avatar from "assets/img/faces/ayo-ogunseinde-2.jpg";
-// TEMPLATE  import logo from "assets/img/react-logo.png";
+// TEMPLATE import logo from "assets/img/react-logo.png";
 
 //SaveSolar Logo
 import savesolarLogo from '../../assets/img/savesolar/savesolar_logo_white.png'
@@ -155,28 +155,31 @@ class Sidebar extends React.Component {
         data-color={this.props.bgColor}
         data-active-color={this.props.activeColor}
       >
-        <div className="logo">
+        <div style={{paddingBottom: 30}} className="logo">
           <div style={{display: 'flex', alignItems: 'center', paddingTop: 20, maxWidth: 90, margin: 'auto'}}>
             <img src={savesolarLogo} alt="SaveSolar Logo" />
           </div>
-{/*  //template logos        <a
-            href="https://www.creative-tim.com"
-            className="simple-text logo-mini"
-          >
-            <div className="logo-img">
-              <img src={logo} alt="react-logo" />
-            </div>
-          </a>
-          <a
-            href="https://www.creative-tim.com"
-            className="simple-text logo-normal"
-          >
-            Creative Tim
-          </a>*/}
+            {/* TEMPLATE   <a
+              href="https://www.creative-tim.com"
+              className="simple-text logo-mini"
+            >
+              <div className="logo-img">
+                <img src={logo} alt="react-logo" />
+              </div>
+            </a>
+            <a
+              href="https://www.creative-tim.com"
+              className="simple-text logo-normal"
+            >
+              Creative Tim
+            </a> */}
         </div>
 
         <div className="sidebar-wrapper" ref="sidebar">
-          <Nav>{this.createLinks(this.props.routes)}</Nav>
+          {this.props.sidebarIsMini ? null : <h5 style={{marginLeft: 20}} className="text-white">Main</h5>}
+          <Nav>{this.createLinks(this.props.routes).slice(0,3)}</Nav>
+          {this.props.sidebarIsMini ? null : <h5 style={{paddingTop: 20, marginLeft: 20}} className="text-white">Account</h5>}
+          <Nav>{this.createLinks(this.props.routes.slice(3))}</Nav>
         </div>
       </div>
     );
