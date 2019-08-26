@@ -19,19 +19,19 @@ import classnames from "classnames";
 import {
   Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  Form,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  NavbarBrand,
+  // DropdownToggle,
+  // DropdownMenu,
+  // DropdownItem,
+  // UncontrolledDropdown,
+  // Form,
+  // Input,
+  // InputGroupAddon,
+  // InputGroupText,
+  // InputGroup,
+  // NavbarBrand,
   Navbar,
-  NavItem,
-  NavLink,
+  // NavItem,
+  // NavLink,
   Nav,
   Container
 } from "reactstrap";
@@ -92,13 +92,14 @@ class AdminNavbar extends React.Component {
         <Navbar
           className={classnames("navbar-absolute fixed-top", this.state.color)}
           expand="lg"
+          style={{border:'none'}}
         >
           <Container fluid>
             <div className="navbar-wrapper">
               <div className="navbar-minimize">
                 <Button
                   className="btn-icon btn-round"
-                  color="default"
+                  color="primary"
                   id="minimizeSidebar"
                   onClick={this.props.handleMiniClick}
                 >
@@ -121,33 +122,20 @@ class AdminNavbar extends React.Component {
                   <span className="navbar-toggler-bar bar3" />
                 </button>
               </div>
-              <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              {/*<NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 <span className="d-none d-md-block">
                   Paper Dashboard PRO React
                 </span>
                 <span className="d-block d-md-none">PD PRO React</span>
-              </NavbarBrand>
+              </NavbarBrand>*/}
             </div>
-            <button
-              aria-controls="navigation-index"
-              aria-expanded={this.state.collapseOpen}
-              aria-label="Toggle navigation"
-              className="navbar-toggler"
-              // data-target="#navigation"
-              data-toggle="collapse"
-              type="button"
-              onClick={this.toggleCollapse}
-            >
-              <span className="navbar-toggler-bar navbar-kebab" />
-              <span className="navbar-toggler-bar navbar-kebab" />
-              <span className="navbar-toggler-bar navbar-kebab" />
-            </button>
+
             <Collapse
               className="justify-content-end"
               navbar
               isOpen={this.state.collapseOpen}
             >
-              <Form>
+              {/*<Form>
                 <InputGroup className="no-border">
                   <Input defaultValue="" placeholder="Search..." type="text" />
                   <InputGroupAddon addonType="append">
@@ -156,9 +144,9 @@ class AdminNavbar extends React.Component {
                     </InputGroupText>
                   </InputGroupAddon>
                 </InputGroup>
-              </Form>
+              </Form>*/}
               <Nav navbar>
-                <NavItem>
+                {/*<NavItem>
                   <NavLink
                     className="btn-magnify"
                     href="#pablo"
@@ -169,7 +157,8 @@ class AdminNavbar extends React.Component {
                       <span className="d-lg-none d-md-block">Stats</span>
                     </p>
                   </NavLink>
-                </NavItem>
+                </NavItem>*/}
+                {/*
                 <UncontrolledDropdown className="btn-rotate" nav>
                   <DropdownToggle
                     aria-haspopup={true}
@@ -204,7 +193,8 @@ class AdminNavbar extends React.Component {
                       Something else here
                     </DropdownItem>
                   </DropdownMenu>
-                </UncontrolledDropdown>
+                </UncontrolledDropdown>*/}
+                {/*
                 <NavItem>
                   <NavLink
                     className="btn-rotate"
@@ -216,7 +206,7 @@ class AdminNavbar extends React.Component {
                       <span className="d-lg-none d-md-block">Account</span>
                     </p>
                   </NavLink>
-                </NavItem>
+                </NavItem>*/}
               </Nav>
             </Collapse>
           </Container>
