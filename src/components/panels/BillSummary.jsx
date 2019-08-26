@@ -49,7 +49,7 @@ class BillSummary extends React.Component {
   render() {
 
     return(
-      <div className="content h-100" style={{paddingBottom: 25}}>
+      <div className="h-100" style={{paddingBottom: 25}}>
         <Card className=" h-100" >
           <CardHeader>
             <Row>
