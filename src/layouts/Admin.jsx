@@ -20,7 +20,7 @@ import PerfectScrollbar from "perfect-scrollbar";
 import { Route, Switch } from "react-router-dom";
 
 import AdminNavbar from "components/Navbars/AdminNavbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
+// import Footer from "components/Footer/Footer.jsx";
 import Sidebar from "components/Sidebar/Sidebar.jsx";
 //import FixedPlugin from "components/FixedPlugin/FixedPlugin.jsx";
 
@@ -103,11 +103,12 @@ class Admin extends React.Component {
         <div className="main-panel" ref="mainPanel">
           <AdminNavbar {...this.props} handleMiniClick={this.handleMiniClick} />
           <Switch>{this.getRoutes(routes)}</Switch>
+          {/*
           {// we don't want the Footer to be rendered on full screen maps page
           this.props.location.pathname.indexOf("full-screen-map") !==
           -1 ? null : (
             <Footer fluid />
-          )}
+          )}*/}
         </div>
         {/*<FixedPlugin
           bgColor={this.state.backgroundColor}
